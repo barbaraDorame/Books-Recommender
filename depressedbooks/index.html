@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>I feel you :(</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/depressedstyler.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand">Books for folks</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#finder">FIND ME SOME BOOKS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="text_wrap_center">
+                <h1 class="text-uppercase">
+                  <strong>Books recommender</strong>
+                </h1>
+                <hr>
+              <div class="col-lg-8 mx-auto">
+                <p class="text-faded mb-5">So, tell me how you feelin' and what you like so i can tell you what to read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-primary" id="finder">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">How you feelin' today?</h2>
+            <hr class="light">
+            <p class="text-faded mb-4">Choose a percentage of happines</p>
+            <i class="fa fa-smile-o fa-4x" aria-hidden="true"></i>
+            <br>
+            <br>
+            <div id="slidecontainer">
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              <p>Mood state: <span id="demo"></span></p>
+            </div>
+            <br>
+            <p class="text-faded mb-4">Topics to choose: </p>
+            <form>
+
+            <div class="row">
+
+                    <div class="col-md-4 mx-auto text-left">
+                		<fieldset>
+                			<label class="checkbox">
+                				<input type="checkbox" id='1' class='chbx'/><a class="ref">Expedition/Adventure/Tale</a>
+                			</label>
+                		</fieldset>
+                        <fieldset>
+                    		<label class="checkbox">
+                				<input type="checkbox" id='2' class='chbx'/><a class="ref">Novel/Drama</a>
+                			</label>
+                		</fieldset>
+                        <fieldset>
+                    		<label class="checkbox">
+                				<input type="checkbox" id='3' class='chbx'/><a class="ref">Sailor tales</a>
+                			</label>
+                		</fieldset>
+                        <fieldset>
+                    		<label class="checkbox">
+                				<input type="checkbox" id='4' class='chbx'/><a class="ref">Cavalry</a>
+                			</label>
+                		</fieldset>
+                        <fieldset>
+                    		<label class="checkbox">
+                				<input type="checkbox" id='5' class='chbx'/><a class="ref">Poems/Oldie</a>
+                			</label>
+                		</fieldset>
+                    </div>
+                    <div class="col-md-4 mx-auto text-left">
+
+                        <fieldset>
+                    		<label class="checkbox">
+                				<input type="checkbox" id='6' class='chbx'/><a class="ref">Politics</a>
+                			</label>
+                		</fieldset>
+                        <fieldset>
+                    		<label class="checkbox">
+                				<input type="checkbox" id='7' class='chbx'/><a class="ref">Spiritual/Religion/Poems</a>
+                			</label>
+                		</fieldset>
+                        <fieldset>
+                    		<label class="checkbox">
+                				<input type="checkbox" id='8' class='chbx'/><a class="ref">The life of/Biography/Novel</a>
+                			</label>
+                		</fieldset>
+                        <fieldset>
+                    		<label class="checkbox">
+                				<input type="checkbox" id='9' class='chbx'/><a class="ref">Educational</a>
+                			</label>
+                		</fieldset>
+                        <fieldset>
+                    		<label class="checkbox">
+                				<input type="checkbox" id='10' class='chbx'/><a class="ref">Medieval</a>
+                			</label>
+                		</fieldset>
+                    </div>
+                    <div class="col-md-4 text-left">
+                        <fieldset>
+                    		<label class="checkbox">
+                				<input type="checkbox" id='11' class='chbx'/><a class="ref">Children books</a>
+                			</label>
+                		</fieldset>
+                        <fieldset>
+                    		<label class="checkbox">
+                				<input type="checkbox" id='12' class='chbx'/><a class="ref">WWII</a>
+                			</label>
+                		</fieldset>
+                        <fieldset>
+                    		<label class="checkbox">
+                				<input type="checkbox" id='13' class='chbx'/><a class="ref">Novel/Fiction</a>
+                			</label>
+                		</fieldset>
+                        <fieldset>
+                    		<label class="checkbox">
+                				<input type="checkbox" id='14' class='chbx'/><a class="ref">Literature/History</a>
+                			</label>
+                		</fieldset>
+                        <fieldset>
+                    		<label class="checkbox">
+                				<input type="checkbox" id='15' class='chbx'/><a class="ref">Renaissance/History</a>
+                			</label>
+                		</fieldset>
+                    </div>
+                    </div>
+                    <a class="btn btn-light btn-xl js-scroll-trigger" id="buttonClass" onclick="submit()">Gimme some good books</a>
+
+            </div>
+        </form>
+
+            <div class="row"><ol id="results"></ol></div>
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script>
+
+        function librillo(libro) {
+            return $(`
+            <li style="margin-bottom: 1em; color: #FFF;">
+            <i>${libro.Title}</i> by <b>${libro.Author}</b>
+            </li>
+            `)
+        }
+        function submit() {
+            var values = [];
+            var slider = document.getElementById("myRange");
+            $("input[type=checkbox]:checked").each(function(){
+                values.push($(this).next("a").text());
+            });
+            var happy = slider.value;
+            fetch("jsonpickle.json")
+              .then(response => response.json())
+              .then(json => find_book(json, happy, values));
+        }
+        function find_book(json, happy, topicos){
+            var books = [];
+            if(happy <= 50){
+                real_happy = 100 - happy * 2;
+
+            }else{
+                real_happy = (happy - 50) * 2;
+            }
+            var i = 0;
+            var resultContainer = $("#results");
+            var results = [];
+
+            Object.keys(json).forEach(function(key,index){
+                if (happy <= 50){
+                    if (json[key].Negativeness < real_happy + 5 && json[key].Negativeness > real_happy - 5 && findone(json[key].Topic, topicos)){
+                        results.push(json[key])
+                        i += 1;
+                    }
+                } else {
+                    if (json[key].Positiveness < real_happy + 5 && json[key].Positiveness > real_happy - 5 && findone(json[key].Topic, topicos)){
+                        results.push(json[key])
+                        i += 1;
+                    }
+                }
+            });
+
+            resultContainer.append(results.map(librillo));
+        }
+        function findone(haystack, arr) {
+            return arr.some(function (v) {
+                return haystack.indexOf(v) >= 0;
+            });
+        };
+    </script>
+
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value; // Display the default slider value
+
+        // Update the current slider value (each time you drag the slider handle)
+        slider.oninput = function() {
+            if (this.value >= 0 && this.value < 25){
+                output.innerHTML = this.value + "  oh no, i hope you're ok";
+            }else if (this.value >= 25 && this.value < 50){
+                output.innerHTML = this.value + "  ok, we're getting better";
+            }else if (this.value >= 50 && this.value < 75){
+                output.innerHTML = this.value + "  hey, that's pretty good";
+            }else if(this.value >= 50 && this.value < 90){
+                output.innerHTML = this.value + "  uff, i'm glad you're feelin' happy";
+            }else{
+                output.innerHTML = this.value + "  YAAAAAYYY!";
+            }
+        }
+    </script>
+    <script src="js/creative.min.js"></script>
+
+  </body>
+
+</html>
